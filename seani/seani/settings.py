@@ -2,9 +2,6 @@
 from pathlib import Path
 
 import os
-
-
-
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
@@ -36,7 +33,6 @@ INSTALLED_APPS = [
     'library.apps.LibraryConfig',
     'career.apps.CareerConfig',
     'exam.apps.ExamConfig',
-    
 
     #Django Apps
     'django.contrib.admin',
