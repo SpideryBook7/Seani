@@ -2,6 +2,9 @@
 from pathlib import Path
 
 import os
+
+
+
 import cloudinary
 import cloudinary.uploader
 import cloudinary.api
@@ -33,6 +36,7 @@ INSTALLED_APPS = [
     'library.apps.LibraryConfig',
     'career.apps.CareerConfig',
     'exam.apps.ExamConfig',
+    
 
     #Django Apps
     'django.contrib.admin',
@@ -58,7 +62,7 @@ ROOT_URLCONF = 'seani.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR / 'templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
